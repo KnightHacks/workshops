@@ -1,0 +1,183 @@
+{
+  "main": {
+    "id": "e1e74b991419c1bb",
+    "type": "split",
+    "children": [
+      {
+        "id": "83581475606a85ff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6d745b5c407c8fe1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2024-2025/pre-hackathon/tkinter-desktop-apps/presentation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "7917d78e9aaa7300",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eb96961b0a89ce9d",
+            "type": "leaf",
+            "state": {
+              "type": "reveal-preview-view",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "14fe4ba6921c91c9",
+    "type": "split",
+    "children": [
+      {
+        "id": "b07e19d3bc9f074f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9e4a00f0ddc1647b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "622dafcf7477bd84",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6ae36358f1c1526c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "26273e92e71a8dcf",
+    "type": "split",
+    "children": [
+      {
+        "id": "d21860aafc24c022",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "61068e354716ae1e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2024-2025/pre-hackathon/tkinter-desktop-apps/presentation.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ecf86054343eaea1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "2024-2025/pre-hackathon/tkinter-desktop-apps/presentation.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b1b06b8082781a01",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "921a3c53389095fd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2024-2025/pre-hackathon/tkinter-desktop-apps/presentation.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-advanced-slides:Show Slide Preview": false
+    }
+  },
+  "active": "9e4a00f0ddc1647b",
+  "lastOpenFiles": [
+    "Images/tkinter_ultimate_tic_tac_toe.png",
+    "2024-2025/pre-hackathon/tkinter-desktop-apps/ultimate.py",
+    "2024-2025/pre-hackathon/tkinter-desktop-apps/tk-venv/lib/python3.11/site-packages/ttkbootstrap-1.10.1.dist-info/REQUESTED",
+    "2024-2025/pre-hackathon/tkinter-desktop-apps/tk-venv/lib/python3.11/site-packages/ttkbootstrap-1.10.1.dist-info/INSTALLER",
+    "2024-2025/pre-hackathon/tkinter-desktop-apps/tk-venv/lib/python3.11/site-packages/ttkcreator/__pycache__/__main__.cpython-311.pyc",
+    "2024-2025/pre-hackathon/tkinter-desktop-apps/tk-venv/lib/python3.11/site-packages/ttkcreator/__pycache__/__init__.cpython-311.pyc",
+    "2024-2025/pre-hackathon/tkinter-desktop-apps/tk-venv/lib/python3.11/site-packages/ttkcreator/__pycache__",
+    "2024-2025/pre-hackathon/tkinter-desktop-apps/tk-venv/lib/python3.11/site-packages/ttkbootstrap/__pycache__/window.cpython-311.pyc",
+    "2024-2025/pre-hackathon/tkinter-desktop-apps/tk-venv/lib/python3.11/site-packages/ttkbootstrap/__pycache__/widgets.cpython-311.pyc",
+    "2024-2025/pre-hackathon/tkinter-desktop-apps/tk-venv/lib/python3.11/site-packages/ttkbootstrap/__pycache__/validation.cpython-311.pyc",
+    "2024-2025/pre-hackathon/tkinter-desktop-apps/tk-venv/lib/python3.11/site-packages/ttkbootstrap/__pycache__/utility.cpython-311.pyc",
+    "Untitled.md",
+    "2024-2025/pre-hackathon/tkinter-desktop-apps/presentation.md",
+    "Images/tkinter_hello_world.png",
+    "2024-2025/pre-hackathon/tkinter-desktop-apps/README.md",
+    "2024-2025/hello-world/README.md"
+  ]
+}

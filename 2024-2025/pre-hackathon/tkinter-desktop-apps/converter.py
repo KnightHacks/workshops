@@ -2,22 +2,22 @@ import tkinter as tk
 from tkinter import ttk
 import time
 
+
 # Decimal to binary conversion functionality
 def convert():
     # Grab the binary number from the entry box
     try:
         binary_input = int(entry_val.get())
-    except:  
-        output_label['text'] = 'Invalid Binary Number...'
-        output_label['foreground'] = 'red'
+    except:
+        output_label["text"] = "Invalid Binary Number..."
+        output_label["foreground"] = "red"
         return
 
     # Validate that the input is a binary number
     for digit in str(binary_input):
         if digit not in ["0", "1"]:
-            output_label['text'] = 'Invalid Binary Number...'
-            output_label['foreground'] = 'red'
-            submit_button['state'] = 'disabled'
+            output_label["text"] = "Invalid Binary Number..."
+            output_label["foreground"] = "red"
             return
 
     # Find the decimal value
@@ -29,9 +29,8 @@ def convert():
         binary_input = binary_input // 10
         i += 1
 
-    output_label['text'] = f"Output: {decimal_output}"
-    output_label['foreground'] = "green"
-    print(output_label.configure())
+    output_label["text"] = f"Output: {decimal_output}"
+    output_label["foreground"] = "green"
 
 
 # Create the main window
@@ -42,7 +41,7 @@ window.title("Knight Hacks Demo App - Binary Conversion")
 # Create the title and description label
 title_label = ttk.Label(window, text="Knight Hacks Demo App", font=("Calibri", 24))
 title_label.pack(pady=20, padx=20)
-desc_label = ttk.Label(window, text="A sample Tkinter app that converts a binary number to its decimal representation")
+desc_label = ttk.Label(window, text="A sample Tkinter app that converts a binary number to decimal")
 desc_label.pack(padx=20)
 
 # Create the input frame
@@ -57,5 +56,6 @@ input_frame.pack(pady=20)
 # Output label
 output_label = ttk.Label(window, text="Output: ", font=("Calibri", 24))
 output_label.pack(pady=20)
+
 # Run the main loop
 window.mainloop()

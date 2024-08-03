@@ -7,7 +7,6 @@ Tkinter is a popular GUI framework for Python, and makes it easy to create deskt
 To get started with this workshop, clone the workshops repository and navigate to the `tkinter-desktop-apps` directory. This workshop has the following Python dependencies:
 
 -   `tkinter` (included in Python standard library)
--   `ttkbootstrap` (for ttk themes)
 
 ### Documentation
 https://docs.python.org/3/library/tkinter.ttk.html
