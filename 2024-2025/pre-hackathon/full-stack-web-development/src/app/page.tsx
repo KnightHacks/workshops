@@ -4,6 +4,7 @@ import { getServerAuthSession } from "~/server/auth";
 import { api, HydrateClient } from "~/trpc/server";
 import { HandleEditor } from "./_components/handle-editor";
 import { PostEditor } from "./_components/post-editor";
+import { PostList } from "./_components/post-list";
 
 export default async function Home() {
   const hello = await api.hello({ text: "from tRPC" });
@@ -27,9 +28,9 @@ export default async function Home() {
           <>
             <HandleEditor currentHandle={session.user.handle} />
             <PostEditor />
+            <PostList />
           </>
         )}
-        {}
       </main>
     </HydrateClient>
   );
