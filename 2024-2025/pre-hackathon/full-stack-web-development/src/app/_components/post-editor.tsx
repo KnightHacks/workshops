@@ -7,7 +7,12 @@ import { api } from "~/trpc/react";
 
 export function PostEditor() {
   const [postText, setPostText] = useState("");
-  const createPost = api.post.create.useMutation();
+  const utils = api.useUtils();
+  const createPost = api.post.create.useMutation({
+    async onSuccess() {
+      await utils.post.all.invalidate();
+    },
+  });
 
   return (
     <div className="mb-2">
