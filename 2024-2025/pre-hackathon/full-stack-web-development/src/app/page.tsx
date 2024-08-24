@@ -3,6 +3,7 @@ import { Button } from "~/components/ui/button";
 import { getServerAuthSession } from "~/server/auth";
 import { api, HydrateClient } from "~/trpc/server";
 import { HandleEditor } from "./_components/handle-editor";
+import { PostEditor } from "./_components/post-editor";
 
 export default async function Home() {
   const hello = await api.hello({ text: "from tRPC" });
@@ -22,7 +23,13 @@ export default async function Home() {
             <Button className="mb-2">{session ? "Sign out" : "Sign in"}</Button>
           </Link>
         </div>
-        {session && <HandleEditor currentHandle={session.user.handle} />}
+        {session && (
+          <>
+            <HandleEditor currentHandle={session.user.handle} />
+            <PostEditor />
+          </>
+        )}
+        {}
       </main>
     </HydrateClient>
   );
