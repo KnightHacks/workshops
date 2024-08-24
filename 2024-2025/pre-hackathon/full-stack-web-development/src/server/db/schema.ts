@@ -21,22 +21,26 @@ export const createTable = sqliteTableCreator(
   (name) => `full-stack-web-development_${name}`,
 );
 
-// export const posts = createTable(
-//   "post",
-//   {
-//     id: int("id", { mode: "number" }).primaryKey({ autoIncrement: true }),
-//     name: text("name", { length: 256 }),
-//     createdAt: int("created_at", { mode: "timestamp" })
-//       .default(sql`(unixepoch())`)
-//       .notNull(),
-//     updatedAt: int("updated_at", { mode: "timestamp" }).$onUpdate(
-//       () => new Date()
-//     ),
-//   },
-//   (example) => ({
-//     nameIndex: index("name_idx").on(example.name),
-//   })
-// );
+export const posts = createTable("post", {
+  id: int("id", { mode: "number" }).primaryKey({ autoIncrement: true }),
+  text: text("name", { length: 256 }),
+  createdAt: int("created_at", { mode: "timestamp" })
+    .default(sql`(unixepoch())`)
+    .notNull(),
+  updatedAt: int("updated_at", { mode: "timestamp" }).$onUpdate(
+    () => new Date(),
+  ),
+  likesCount: int("likes_count", {
+    mode: "number",
+  }).default(0),
+  userId: text("user_id", { length: 255 })
+    .notNull()
+    .references(() => users.id),
+});
+
+export const postsRelations = relations(posts, ({ one }) => ({
+  user: one(users, { fields: [posts.userId], references: [users.id] }),
+}));
 
 export const users = createTable("user", {
   id: text("id", { length: 255 })
@@ -54,6 +58,7 @@ export const users = createTable("user", {
 
 export const usersRelations = relations(users, ({ many }) => ({
   accounts: many(accounts),
+  posts: many(posts),
 }));
 
 export const accounts = createTable(
