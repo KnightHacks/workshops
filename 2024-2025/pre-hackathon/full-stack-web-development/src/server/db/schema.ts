@@ -49,6 +49,7 @@ export const users = createTable("user", {
     mode: "timestamp",
   }).default(sql`(unixepoch())`),
   image: text("image", { length: 255 }),
+  handle: text("handle", { length: 255 }),
 });
 
 export const usersRelations = relations(users, ({ many }) => ({
