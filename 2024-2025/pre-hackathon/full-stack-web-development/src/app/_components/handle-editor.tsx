@@ -11,7 +11,7 @@ export function HandleEditor({ currentHandle }: { currentHandle?: string }) {
   const updateHandle = api.user.updateHandle.useMutation();
 
   return (
-    <div>
+    <div className="mb-2">
       <h1>
         {(currentHandle && currentHandle.length > 0) || newHandle.length > 0
           ? `Your handle is`
