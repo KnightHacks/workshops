@@ -11,12 +11,12 @@ export function HandleEditor({ currentHandle }: { currentHandle?: string }) {
   const updateHandle = api.user.updateHandle.useMutation();
 
   return (
-    <>
-      <div>
+    <div>
+      <h1>
         {(currentHandle && currentHandle.length > 0) || newHandle.length > 0
           ? `Your handle is`
           : "You don't have a handle. Create one if you'd like to be known or remain anonymous!"}
-      </div>
+      </h1>
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -44,6 +44,6 @@ export function HandleEditor({ currentHandle }: { currentHandle?: string }) {
           Update Handle
         </Button>
       </form>
-    </>
+    </div>
   );
 }
