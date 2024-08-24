@@ -12,14 +12,16 @@ export default async function Home() {
     <HydrateClient>
       <main className="p-4">
         <div className="mb-1.5">
-          {hello.greeting}. You are signed in as {session?.user.name}.
+          <div>
+            {hello.greeting}. You are signed in as {session?.user.name}.
+          </div>
+          <Link
+            passHref
+            href={session ? "/api/auth/signout" : "/api/auth/signin"}
+          >
+            <Button className="mb-2">{session ? "Sign out" : "Sign in"}</Button>
+          </Link>
         </div>
-        <Link
-          passHref
-          href={session ? "/api/auth/signout" : "/api/auth/signin"}
-        >
-          <Button className="mb-2">{session ? "Sign out" : "Sign in"}</Button>
-        </Link>
         {session && <HandleEditor currentHandle={session.user.handle} />}
       </main>
     </HydrateClient>
