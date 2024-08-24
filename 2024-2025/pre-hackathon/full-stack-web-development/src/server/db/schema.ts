@@ -23,7 +23,7 @@ export const createTable = sqliteTableCreator(
 
 export const posts = createTable("post", {
   id: int("id", { mode: "number" }).primaryKey({ autoIncrement: true }),
-  text: text("name", { length: 256 }),
+  text: text("name", { length: 256 }).notNull(),
   createdAt: int("created_at", { mode: "timestamp" })
     .default(sql`(unixepoch())`)
     .notNull(),
