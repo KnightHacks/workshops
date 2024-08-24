@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "~/components/ui/button";
 import { getServerAuthSession } from "~/server/auth";
 import { api, HydrateClient } from "~/trpc/server";
+import { HandleEditor } from "./_components/handle-editor";
 
 export default async function Home() {
   const hello = await api.hello({ text: "from tRPC" });
@@ -9,10 +10,13 @@ export default async function Home() {
 
   return (
     <HydrateClient>
-      <main>{hello.greeting}</main>
+      <main>
+        {hello.greeting} {session?.user.name}
+      </main>
       <Link passHref href={session ? "/api/auth/signout" : "/api/auth/signin"}>
         <Button>{session ? "Sign out" : "Sign in"}</Button>
       </Link>
+      {session && <HandleEditor handle={session.user.handle} />}
     </HydrateClient>
   );
 }
