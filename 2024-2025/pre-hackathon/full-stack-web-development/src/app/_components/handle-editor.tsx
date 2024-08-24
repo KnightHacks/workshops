@@ -5,29 +5,42 @@ import { Button } from "~/components/ui/button";
 import { Input } from "~/components/ui/input";
 import { api } from "~/trpc/react";
 
-export function HandleEditor({ handle }: { handle?: string }) {
-  const [newHandle, setNewHandle] = useState(handle ?? "");
+export function HandleEditor({ currentHandle }: { currentHandle?: string }) {
+  const [newHandle, setNewHandle] = useState(currentHandle ?? "");
+  const [hasUpdatedHandle, setHasUpdatedHandle] = useState(false);
   const updateHandle = api.user.updateHandle.useMutation();
 
   return (
     <>
       <div>
-        {handle && handle.length > 0
+        {(currentHandle && currentHandle.length > 0) || newHandle.length > 0
           ? `Your handle is`
-          : "You don't a handle. Create one to interact with other users!"}
+          : "You don't have a handle. Create one if you'd like to be known or remain anonymous!"}
       </div>
       <form
         onSubmit={(e) => {
           e.preventDefault();
           updateHandle.mutate(newHandle);
+          setHasUpdatedHandle(true);
         }}
       >
         <Input
           placeholder="Enter your new handle"
+          className="mb-2"
           value={newHandle}
-          onChange={(e) => setNewHandle(e.target.value)}
+          onChange={(e) => {
+            setNewHandle(e.target.value);
+            setHasUpdatedHandle(false);
+          }}
         />
-        <Button disabled={handle === newHandle} type="submit">
+        <Button
+          disabled={
+            newHandle.length <= 0 ||
+            currentHandle === newHandle ||
+            hasUpdatedHandle
+          }
+          type="submit"
+        >
           Update Handle
         </Button>
       </form>
