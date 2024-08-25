@@ -1,8 +1,9 @@
 "use client";
 
 import { api } from "~/trpc/react";
+import { Post } from "./post";
 
-export function PostList() {
+export function PostList({ userId }: { userId: string }) {
   const posts = api.post.all.useQuery();
 
   return (
@@ -17,10 +18,7 @@ export function PostList() {
       ) : (
         <ul>
           {posts?.data?.map((post) => (
-            <li key={post.id}>
-              <p>{post.text}</p>
-              <p>Posted by: {post.user.handle}</p>
-            </li>
+            <Post key={post.id} post={post} userId={userId} />
           ))}
         </ul>
       )}
