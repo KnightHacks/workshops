@@ -28,7 +28,7 @@ export default async function Home() {
           <>
             <HandleEditor currentHandle={session.user.handle} />
             <PostEditor />
-            <PostList />
+            <PostList userId={session.user.id} />
           </>
         )}
       </main>
