@@ -41,7 +41,7 @@ export function HandleEditor({ currentHandle }: { currentHandle?: string }) {
           }
           type="submit"
         >
-          Update Handle
+          {updateHandle.isPending ? "Updating..." : "Update handle"}
         </Button>
       </form>
     </div>
