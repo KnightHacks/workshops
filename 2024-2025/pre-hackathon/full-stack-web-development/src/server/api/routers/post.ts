@@ -1,7 +1,7 @@
 import { posts } from "~/server/db/schema";
 import { createTRPCRouter, protectedProcedure } from "../trpc";
 import { z } from "zod";
-import { desc, eq } from "drizzle-orm";
+import { desc, eq, isNull, notExists } from "drizzle-orm";
 
 export const postRouter = createTRPCRouter({
   create: protectedProcedure
@@ -10,6 +10,15 @@ export const postRouter = createTRPCRouter({
       await ctx.db.insert(posts).values({
         userId: ctx.session.user.id,
         text: input,
+      });
+    }),
+  reply: protectedProcedure
+    .input(z.object({ text: z.string(), replyToId: z.number() }))
+    .mutation(async ({ ctx, input }) => {
+      await ctx.db.insert(posts).values({
+        userId: ctx.session.user.id,
+        text: input.text,
+        postInReplyToId: input.replyToId,
       });
     }),
   delete: protectedProcedure
@@ -49,6 +58,19 @@ export const postRouter = createTRPCRouter({
       with: {
         user: true,
       },
+      where: isNull(posts.postInReplyToId),
     });
   }),
+  allReplies: protectedProcedure
+    .input(z.number())
+    .query(async ({ ctx, input }) => {
+      return await ctx.db.query.posts.findMany({
+        where: eq(posts.postInReplyToId, input),
+        orderBy: desc(posts.createdAt),
+        with: {
+          user: true,
+          post: true,
+        },
+      });
+    }),
 });

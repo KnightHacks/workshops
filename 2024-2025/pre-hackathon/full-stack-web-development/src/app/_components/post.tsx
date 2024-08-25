@@ -7,21 +7,31 @@ export function Post({
   post,
   userId,
 }: {
-  post: RouterOutputs["post"]["all"][number];
+  post:
+    | RouterOutputs["post"]["all"][number]
+    | RouterOutputs["post"]["allReplies"][number];
   userId: string;
 }) {
+  const replies = api.post.allReplies.useQuery(post.id);
   const [newPostText, setNewPostText] = useState(post.text);
+  const [replyText, setReplyText] = useState("");
   const [isEditing, setIsEditing] = useState(false);
+  const [isReplying, setIsReplying] = useState(false);
   const utils = api.useUtils();
   const deletePost = api.post.delete.useMutation({
     async onSuccess() {
-      await utils.post.all.invalidate();
+      await utils.post.invalidate();
     },
   });
   const updatePost = api.post.update.useMutation({
     async onSuccess() {
-      await utils.post.all.invalidate();
+      await utils.post.invalidate();
       setIsEditing(false);
+    },
+  });
+  const replyToPost = api.post.reply.useMutation({
+    async onSuccess() {
+      await utils.post.allReplies.invalidate(post.id);
     },
   });
 
@@ -53,7 +63,18 @@ export function Post({
         </div>
       )}
       {post.user.id === userId && (
-        <div className="space-x-2">
+        <div className="mb-2 space-x-2">
+          <Button
+            onClick={() => {
+              if (isReplying) {
+                setIsReplying(false);
+              } else {
+                setIsReplying(true);
+              }
+            }}
+          >
+            {isReplying ? "Cancel Reply" : "Reply"}
+          </Button>
           <Button
             onClick={() => {
               if (isEditing) {
@@ -87,6 +108,35 @@ export function Post({
             {deletePost.isPending ? "Deleting..." : "Delete"}
           </Button>
         </div>
+      )}
+      {isReplying && (
+        <form
+          className="mb-2"
+          onSubmit={(e) => {
+            e.preventDefault();
+            replyToPost.mutate({
+              text: replyText,
+              replyToId: post.id,
+            });
+            setIsReplying(false);
+          }}
+        >
+          <div className="flex items-center gap-2">
+            <span>{">"}</span>
+            <Input
+              placeholder="Enter your reply text"
+              value={replyText}
+              onChange={(e) => setReplyText(e.target.value)}
+            />
+          </div>
+        </form>
+      )}
+      {replies.data && replies.data.length > 0 && (
+        <ul className="ml-6">
+          {replies.data.map((reply) => (
+            <Post key={reply.id} post={reply} userId={userId} />
+          ))}
+        </ul>
       )}
     </li>
   );

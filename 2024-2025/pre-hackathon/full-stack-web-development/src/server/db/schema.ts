@@ -36,10 +36,12 @@ export const posts = createTable("post", {
   userId: text("user_id", { length: 255 })
     .notNull()
     .references(() => users.id),
+  postInReplyToId: int("post_in_reply_to_id", { mode: "number" }),
 });
 
 export const postsRelations = relations(posts, ({ one }) => ({
   user: one(users, { fields: [posts.userId], references: [users.id] }),
+  post: one(posts, { fields: [posts.postInReplyToId], references: [posts.id] }),
 }));
 
 export const users = createTable("user", {
