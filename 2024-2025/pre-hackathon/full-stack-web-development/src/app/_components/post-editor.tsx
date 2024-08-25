@@ -30,7 +30,7 @@ export function PostEditor() {
           value={postText}
           onChange={(e) => setPostText(e.target.value)}
         />
-        <Button type="submit">
+        <Button type="submit" disabled={postText.length <= 0}>
           {createPost.isPending ? "Creating post..." : "Create Post"}
         </Button>
       </form>
