@@ -30,4 +30,3 @@ The T3 Stack is an opinionated framework made by [Theo Browne](https://x.com/t3d
 ## Let's build shit
 
 ---
-
