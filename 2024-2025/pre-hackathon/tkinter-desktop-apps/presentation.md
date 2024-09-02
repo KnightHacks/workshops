@@ -106,3 +106,8 @@ window.mainloop()
 
 # ULTIMATE TIC TAC TOE!!!
 ![[tkinter_ultimate_tic_tac_toe.png]]
+
+---
+
+# Feedback
+![[tkinter feedback.png]]
