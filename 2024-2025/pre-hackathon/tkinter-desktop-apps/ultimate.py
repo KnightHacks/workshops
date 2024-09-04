@@ -1,11 +1,31 @@
 import tkinter as tk
 from tkinter import ttk
 
-# Initialize the board and game state
-super_board = [["" for _ in range(3)] for _ in range(3)]
-mini_boards = [[[["" for _ in range(3)] for _ in range(3)] for _ in range(3)] for _ in range(3)]
+# Initialize the super board (the 3x3 grid of boards). Each index here will be a full game of tic tac toe
+super_board = []
+for _ in range(3):
+    row = []
+    for _ in range(3):
+        row.append("")
+    super_board.append(row)
+
+# Populate all of the mini boards. This is a 3x3 of 3x3's, so technically a 4D 3x3x3x3.
+mini_boards = []
+for _ in range(3):
+    board = []
+    for _ in range(3):
+        mini_board = []
+        for _ in range(3):
+            row = []
+            for _ in range(3):
+                row.append("")
+            mini_board.append(row)
+        board.append(mini_board)
+    mini_boards.append(board)
+
+# Variables
 x_turn = True
-next_board = None  # None means the player can choose any board
+next_board = None
 over = False
 
 
@@ -188,7 +208,7 @@ for bi in range(3):
         for i in range(3):
             for j in range(3):
                 button = ttk.Button(mini_frame, text="", command=lambda bi=bi, bj=bj, i=i, j=j: make_move(bi, bj, i, j, buttons, turn_label), style="TButton")
-                button.grid(row=i, column=j, padx=2, pady=2, ipadx=10, ipady=10, sticky="nsew")
+                button.grid(row=i, column=j, padx=2, pady=2, ipadx=10, ipady=10)
                 buttons[bi][bj][i].append(button)
 
 # Initial highlight
