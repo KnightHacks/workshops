@@ -77,25 +77,57 @@ Have a repo, now what?
 ### Hackathon Prep
 ---
 ### Basic git commands 
+- git init: Initialize a new repository.
+- git clone: Copy an existing repository.
+- git add: Stage changes.
+- git commit: Record changes.
+- git push: Send changes to remote.
+- git pull: Retrieve and merge changes from remote.
+- git status: View current repo status.
+- git log: Review commit history.
 ---
 ### Branches
+- Create, switch, and delete branches.
+- Work on different features or bug fixes simultaneously.
+
 ---
 ### Pull requests
+- Propose, discuss, and review changes before merging.
+- Useful for team collaboration and quality checks.
+
 ---
 ### Issues
+- Used to track bugs, features, and tasks.
+- Can be assigned, prioritized, and linked to pull requests.
 ---
 ### Merging...
+- Requires resolving conflicts if changes overlap
+- Integrate changes from one branch into another
 ---
 
 ### Tasks
+- Organize workflow with tasks or issues.
+- Use GitHub project boards or task lists to track progress
+- Make sure your team knows what you are doing
 ---
 ### 0 -> 1 Phase
+- Moving from the idea stage to working on an actual project
+- Includes setup, initial coding, and research
 ---
 ### git != github
+- Git: Version control system for managing source code
+- GitHub: Cloud platform that hosts Git repositories and offers collaboration tools.
 ---
 ### best practices
+- Use meaningful commit messages.
+- Regularly pull changes from the main branch.
+- Work on separate branches for features or bug fixes.
+- TALK WITH TEAM
+
 ---
 ### forking, OSS & Contributions
+- Forking allows you to create a personal copy of a project.
+- Contribute to open-source projects by submitting pull requests.
 ---
 ### Lets build...
 ---
