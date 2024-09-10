@@ -1,0 +1,38 @@
+1) ssh keys
+ssh-keygen -t ed25519 -C "dany@dpalma.dev"
+
+eval "$(ssh-agent -s)"
+
+open ~/.ssh/config
+
+Host github.com
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519
+
+
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+
+
+
+2) adding them to account
+
+pbcopy < ~/.ssh/id_ed25519.pub
+
+
+Acc settings, add twice for read/write & signing
+
+3) enable signing
+
+git config --global gpg.format ssh
+git config --global user.signingkey ~/.ssh/path_to_key.pub
+
+4) make a repo
+
+GitHub git-workshop
+
+5) commit stuff
+
+
+
+
