@@ -11,6 +11,7 @@ An intro to VSCode, code execution, and IDE extensibility
 - Extension Ecosystem
 - Code Execution
 - Terminal Configuration (WSL)
+- Theming
 
 ---
 
@@ -98,6 +99,56 @@ An intro to VSCode, code execution, and IDE extensibility
 
 ---
 
+## Settings Sync
+Allows you to sync settings and extensions across VSCode instances using GitHub
+
+---
+
+## Language Support Extensions
+Provides rich text completions for programming languages.
+
+---
+
+## Live Server
+Adds live reload refreshing to HTML / CSS projects
+
+---
+
+## Prettier
+Provides auto formatting for JavaScript, JSX, Angular, Vue, Flow, Typescript, CSS, HTML, JSON, Markdown, and YAML
+
+---
+
+## GitLens
+Manage source control and visualize source changes for rich commit context.
+
+---
+
+## Live Share
+Great way for multiple people to write code in parallel
+
+---
+
+## Indent Rainbow
+More cosmetic, but is a lifesaver with heavily indented code
+
+---
+
+## Code Spell Checker
+To catch bad typos in plain English, like in website text blobs
+
+---
+
+## Turbo Console Log
+Who needs a debugger? Use TCL instead.
+
+---
+
+## Code Diagram
+Very useful for projects and DSA assignments!
+
+---
+
 ## Code Execution (relating to class)
 - C Support
 - Java Support
@@ -117,3 +168,53 @@ Terminal: Select Default Profile
 ```
 
 ---
+
+## Running Code
+### Interpreted Code vs Compiled Code
+
+---
+
+## Interpreted Code
+- Simply run the command to begin execution.
+- Examples include **Python**, JavaScript, Ruby, Perl, PHP
+
+---
+
+```
+python3 test_file.py
+```
+
+---
+
+## Compiled Code
+- First requires a compilation step to convert to machine code
+- Then you can run the resulting exe or binary
+- Examples include **JAVA** and **C**
+
+---
+
+```
+gcc main.c -o main.out
+
+./main.out
+```
+
+---
+
+```
+javac main.java
+
+java main
+```
+
+---
+
+## Theming
+- Color Schemes
+- Icons
+
+---
+
+## Honorable Mentions
+- Pets 
+- Brainrot
