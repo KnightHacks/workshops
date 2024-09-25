@@ -20,6 +20,20 @@
             }
           }
         ]
+      },
+      {
+        "id": "337026fce2b3aea5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9727e761fbc14af4",
+            "type": "leaf",
+            "state": {
+              "type": "reveal-preview-view",
+              "state": {}
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -147,12 +161,16 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "6d745b5c407c8fe1",
+  "active": "9e4a00f0ddc1647b",
   "lastOpenFiles": [
-    "Images/Pasted image 20240920165004.png",
+    "Images/rich_language.png",
+    "Images/basic_editing.png",
+    "Images/basic_editing.png",
+    "2024-2025/hello-world/own-your-ide/presentation.md",
+    "Images/multi_cursor.png",
+    "Images/vsc_sheet.png",
     "2024-2025/pre-hackathon/tkinter-desktop-apps/presentation.md",
     "2024-2025/hello-world/README.md",
-    "2024-2025/hello-world/own-your-ide/presentation.md",
     "2024-2025/pre-hackathon/tkinter-desktop-apps/test.py",
     "Images/tkinter feedback.png",
     "Images/tkinter_ultimate_tic_tac_toe.png",
