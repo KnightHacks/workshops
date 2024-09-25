@@ -13,10 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2024-2025/pre-hackathon/tkinter-desktop-apps/presentation.md",
+                "file": "2024-2025/hello-world/own-your-ide/presentation.md",
                 "mode": "source",
                 "source": false
               }
+            }
+          }
+        ]
+      },
+      {
+        "id": "337026fce2b3aea5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9727e761fbc14af4",
+            "type": "leaf",
+            "state": {
+              "type": "reveal-preview-view",
+              "state": {}
             }
           }
         ]
@@ -85,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2024-2025/pre-hackathon/tkinter-desktop-apps/presentation.md",
+                "file": "2024-2025/hello-world/own-your-ide/presentation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2024-2025/pre-hackathon/tkinter-desktop-apps/presentation.md",
+                "file": "2024-2025/hello-world/own-your-ide/presentation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2024-2025/pre-hackathon/tkinter-desktop-apps/presentation.md"
+                "file": "2024-2025/hello-world/own-your-ide/presentation.md"
               }
             }
           }
@@ -149,6 +163,15 @@
   },
   "active": "9e4a00f0ddc1647b",
   "lastOpenFiles": [
+    "Images/rich_language.png",
+    "Images/basic_editing.png",
+    "Images/basic_editing.png",
+    "2024-2025/hello-world/own-your-ide/presentation.md",
+    "Images/multi_cursor.png",
+    "Images/vsc_sheet.png",
+    "2024-2025/pre-hackathon/tkinter-desktop-apps/presentation.md",
+    "2024-2025/hello-world/README.md",
+    "2024-2025/pre-hackathon/tkinter-desktop-apps/test.py",
     "Images/tkinter feedback.png",
     "Images/tkinter_ultimate_tic_tac_toe.png",
     "2024-2025/pre-hackathon/tkinter-desktop-apps/ultimate.py",
@@ -160,11 +183,8 @@
     "2024-2025/pre-hackathon/tkinter-desktop-apps/tk-venv/lib/python3.11/site-packages/ttkbootstrap/__pycache__/window.cpython-311.pyc",
     "2024-2025/pre-hackathon/tkinter-desktop-apps/tk-venv/lib/python3.11/site-packages/ttkbootstrap/__pycache__/widgets.cpython-311.pyc",
     "2024-2025/pre-hackathon/tkinter-desktop-apps/tk-venv/lib/python3.11/site-packages/ttkbootstrap/__pycache__/validation.cpython-311.pyc",
-    "2024-2025/pre-hackathon/tkinter-desktop-apps/tk-venv/lib/python3.11/site-packages/ttkbootstrap/__pycache__/utility.cpython-311.pyc",
     "Untitled.md",
-    "2024-2025/pre-hackathon/tkinter-desktop-apps/presentation.md",
     "Images/tkinter_hello_world.png",
-    "2024-2025/pre-hackathon/tkinter-desktop-apps/README.md",
-    "2024-2025/hello-world/README.md"
+    "2024-2025/pre-hackathon/tkinter-desktop-apps/README.md"
   ]
 }
