@@ -269,9 +269,9 @@ class RSIBacktester(VectorizedBacktester):
 # Example usage
 if __name__ == "__main__":
     # Example with Moving Average Crossover Strategy
-    symbol = "AAPL"
-    start = "2001-01-01"
-    end = "2024-01-01"
+    symbol = "NVDA"
+    start = (datetime.now() - timedelta(days=(365*5))).strftime("%Y-%m-%d")
+    end = datetime.now().strftime("%Y-%m-%d")
     initial_capital = 100000
     transaction_costs = 0.001
     
@@ -292,8 +292,8 @@ if __name__ == "__main__":
     
     # Optimize strategy parameters
     param_grid = {
-        'sma1': (1, 300, 100),
-        'sma2': (300, 800, 100)
+        'sma1': (1, 100, 10),
+        'sma2': (100, 300, 20)
     }
     
     print("\nOptimizing strategy parameters...")
