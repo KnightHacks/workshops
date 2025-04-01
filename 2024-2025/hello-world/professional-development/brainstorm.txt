@@ -1,0 +1,158 @@
+[ intro. start with pic of applicant table ]
+
+  this is what recruiters see when you click apply
+  with ats systems it might be easier, etc.
+  but it's a slog
+  they're human
+  no matter how hard they try it's impossible to fully read into absolutely everyone
+
+  because of:
+    -> overhiring during covid
+    -> economic uncertainties
+    -> uncertainties around ai
+    -> ** higher competition **
+  ...it's very difficult to stand out
+
+  ** so what do you do? **
+
+[ pre. it's ok to suck ]
+
+  kh is a very talented group
+  you might get the impression that it's difficult to stand out
+  but the reality is that most devs suck -- there is MORE quantity of talent, but not necessarily more QUALITY
+  compared to industry experts, we're complete noobs
+  
+  ** so what do you do? **
+
+[ 1. learn how to learn! ]
+  
+  a crucial thing that makes you good at this early career stage is not HOW GOOD A PROGRAMMER, but how good a LEARNER
+  -- junior devs are investments that cost companies money in most cases --
+  they're there to learn; like super interns
+  they will be bad for a while but eventually become VERY GOOD mid-level, senior devs
+  
+  THE GOOD, ENTHUSIASTIC LEARNERS ARE THE ONES WHO THRIVE 
+
+  ** so how do you show that? **
+  
+  1. build, build build; use new things!
+    -> use a new language, framework, tech, etc. unknown to you
+    -> think of a project that's out of your depth and try to build it
+      -> tip: pick a level of abstraction (high-level vs. lower level) and go one level below it
+  2. document, document, document! 
+    -> linkedin post, blog post, etc.
+    -> helps you absorb what you learned and showcase your ability to do so
+    -> also helps others get a sense of your thinking!
+  3. learn fast, learn slow
+    -> you actually have 2 minds
+    -> one works off approximation and is very FAST
+    -> the other works off deep processing but is very SLOW
+    -> GET GOOD AT KNOWING WHEN TO USE EACH
+      -> e.g. boilerplate code, package manager commands, etc.: learn FAST
+              ...how memory works, how to do things in your framework, etc.: learn SLOW
+      -> there is TOO MUCH to learn... know what to LOCK INTO and what NOT TO 
+  4. use ai responsibly
+    -> it should be a learning tool, NOT a building tool
+    -> it's a bit like experienced car drivers
+      you need to understand the road rules and drive SLOW...
+      ...before you know when it's reasonable to break them a bit and move FAST...
+
+  [dad: in massive corporate environments, teams are evaluated by their PROCESS, not their PRODUCT.]
+
+[ 2. don't oversell yourself... ]
+ 
+  [hyung: overselling yourself without a backup staggeringly discredits you!]
+
+  remember, you suck
+  if you try to make yourself look like you don't, you look ridiculous
+  
+  JUST BECAUSE YOU USED C++ TWICE DOESN'T MEAN YOU KNOW IT WELL!
+
+  focus your resume around the things you're **best** at; keep it focused 
+  
+  ENSURE YOU CAN BACK EVERYTHING UP!
+    -> if you list a programming language, list projects that back it up 
+    -> if you list a project, link a video/gif/github (or all!)
+    -> if you taught a workshop, did design team, etc. etc., POST YOUR WORK!
+
+  YOU ARE BUT WORDS UNLESS YOU PROVE OTHERWISE 
+
+[3. ...but BE yourself! ]
+ 
+  remember; there are a LOT of applicants
+  if everyone limits themselves to a resume and a generic-looking linkedin, it's hard to stand out 
+
+  ( A ) BUILD A PERSONAL BRAND! ------------
+
+  ** show others what you're all about loudly and boldly **
+
+    -> make a website!
+    -> write some blog posts
+    -> give yourself some colors 
+    -> give yourself a logo, font, style... 
+  make yourself MEMORABLE
+
+  this requires <3'ing what you do!
+
+  ( B ) DO WHAT YOU KNOW  ------------------
+
+    -> if it's a webdev job, everyone knows typescript
+    -> but you might differ because you're an artist, making you better at frontend 
+    -> a better math guy, making you better at the data aspect...
+
+  everyone has unique skills; things they love/enjoy
+  they might not always cater to software
+  but you can MAKE them cater to software! 
+  
+  ** combine the skills everyone has with the skills only you do **
+  
+  you'll not only do a better job
+  you'll also work somewhere you want, doing something you love
+
+  ** DO WHAT YOU KNOW BEST **
+
+[ post. be easy on yourself ]
+
+  at this stage a lot don't know what their future looks like
+  tbh neither do i
+  but when you have big problems...
+    (...what problem's bigger than the rest of your life?)
+  you break it down into smaller pieces, the computer science way
+
+  ( A ) SET A CONCRETE, MEASURABLE, WELL-DEFINED GOAL WITH A DEADLINE
+
+  -- HAVE A NORTH STAR! -- 
+    e.g.
+    -> build a complete product
+    -> make x amount of contributions a day
+    -> solve x amount of interview prep problems a day
+    -> get a summer internship
+
+  AS YOU WORK TOWARDS YOUR GOAL, YOU'LL GROW AND DISCOVER MORE THINGS 
+  YOU'LL KNOW MORE AND MORE
+  YOU'LL GET A BETTER IDEA OF WHERE TO GO NEXT
+
+  be reasonable in your goal setting
+  and be careful with what you uncover as you go
+  the trap of getting better is that you might not want to stop
+    remember you're a person who needs connection, identity, peace...
+    you physically cannot always excel at everything 
+    realize this
+    shift your focus on a need-to-need basis
+    DON'T LOSE SIGHT OF LIFE
+
+    "your money comes back; your time doesn't."
+ 
+  ( B ) SHOW UP EVERY DAY, EVEN ON THE BAD ONES; GIVE YOURSELF CREDIT
+
+  it's hard
+  it doesn't happen overnight
+  it's shitty, discouraging, and annoying
+  some days you'll grow by a lot
+  some other days you'll barely move an inch
+  but if you get just 1% better every day for just 6 months... you'll be nearly 20x better in 6 
+  and 37x BETTER AFTER A YEAR
+
+  ...so keep showing up!
+
+  * you've got this, kh is here for u :) *
