@@ -5,11 +5,9 @@ You'll want to first install the GLFW library, the easiest way to do that is wit
 sudo apt install libglfw3-dev libgl1-mesa-dev
 ```
 
-After doing this you'll want to install GLAD
+Download the Linux Template zip and extract
 
-To install glad you can go to this [link](https://glad.dav1d.de/) and download the required files. Alternatively you can just download ``glad.c`` and ``glad.h`` from this file.
-
-To use GLFW and GLAD in your program you're going to want to include them with GLAD first.
+To use GLFW and GLAD in your program you're going to want to include them with GLAD being the first include.
 ```
 #include "glad.h"
 #include <GLFW/glfw3.h>
@@ -31,6 +29,7 @@ int main() {
     
     GLFWwindow *window = glfwCreateWindow(800, 800, "Shaders", NULL, NULL);
     if (window == NULL) return -1;
+    glfwMakeContextCurrent(window);
     
     gladLoadGL();
     
@@ -45,6 +44,6 @@ int main() {
 Make sure you have g++ and call the file main.cpp, then run the Makefile.
 
 You can compile manually like this 
-``g++ ${FILENAME}.cpp glad.c -o ${EXENAME} -lglfw -lGL -lX11 -lpthread -lXrandr -lXi -ldl -lm``
+``g++ ${FILENAME}.cpp glad.c -o ${EXENAME} -lglfw -lGL -lX11 -lpthread -lXrandr -ldl -lm``
 
 Some of the flags may not be needed.
